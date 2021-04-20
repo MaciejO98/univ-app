@@ -42,7 +42,7 @@ before_action :set_student, only: [:edit, :update, :show]
   end 
 
   def student_params
-    params.require(:student).permit(:name, :email)
+    params.require(:student).permit(:name, :password, :password_confirmation, :email)
   end
 
 end
